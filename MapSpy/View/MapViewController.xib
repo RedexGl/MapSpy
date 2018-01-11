@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="MapSpy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-n2-1h5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                </mapView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-5y-UVe">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Item" id="XQn-cl-dbs"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Iat-n2-1h5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8xA-7v-9lQ"/>
+                <constraint firstAttribute="bottom" secondItem="e8G-5y-UVe" secondAttribute="bottom" id="9KH-9e-pgH"/>
+                <constraint firstItem="e8G-5y-UVe" firstAttribute="top" secondItem="Iat-n2-1h5" secondAttribute="bottom" id="DzP-pc-01v"/>
+                <constraint firstAttribute="trailing" secondItem="e8G-5y-UVe" secondAttribute="trailing" id="POz-of-DJ7"/>
+                <constraint firstItem="e8G-5y-UVe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WHF-S6-naA"/>
+                <constraint firstAttribute="trailing" secondItem="Iat-n2-1h5" secondAttribute="trailing" id="ZCe-6x-vRE"/>
+                <constraint firstItem="Iat-n2-1h5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tDT-nk-fZx"/>
+            </constraints>
+            <point key="canvasLocation" x="6.5" y="18.5"/>
+        </view>
+    </objects>
+</document>
