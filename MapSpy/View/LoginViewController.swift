@@ -19,14 +19,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var button: UIButton!
     
-    @IBAction func go(_ sender: Any) {
+    @IBAction func go(_ sender: Any?) {
         
         let viewcontroller = MapViewController()
         
         self.navigationController?.pushViewController(viewcontroller, animated: true)
+        
+        let login = loginTextField.text!
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.go(nil)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,8 +47,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         
+        
         if textField == loginTextField {
             if loginTextField.text != nil && loginTextField.text?.lengthOfBytes(using: .utf8) != 0 {
+                
+                
                 
                 passwordTextField.becomeFirstResponder()
             }

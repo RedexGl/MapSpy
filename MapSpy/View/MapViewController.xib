@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="MapSpy" customModuleProvider="target">
             <connections>
+                <outlet property="map" destination="Iat-n2-1h5" id="A5P-tH-iUt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,6 +22,10 @@
             <subviews>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-n2-1h5">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="iLW-q7-5ee" appends="YES" id="cXS-SA-pGE"/>
+                    </connections>
                 </mapView>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-5y-UVe">
                     <rect key="frame" x="0.0" y="623" width="375" height="44"/>
@@ -41,5 +46,10 @@
             </constraints>
             <point key="canvasLocation" x="6.5" y="18.5"/>
         </view>
+        <tapGestureRecognizer id="iLW-q7-5ee">
+            <connections>
+                <action selector="longPressWithSender:" destination="-1" id="lmP-sT-uAa"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
