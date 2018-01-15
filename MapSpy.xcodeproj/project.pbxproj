@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		144F00416530A0E3E7955B4D /* Pods_MapSpy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408E7D9ED3F45A9998A76AE5 /* Pods_MapSpy.framework */; };
+		360C3974200D381D002FC206 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C3971200D381D002FC206 /* DataController.swift */; };
+		360C3975200D381D002FC206 /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C3973200D381D002FC206 /* NetworkInterface.swift */; };
 		365330B72007EC7C003C6B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365330B62007EC7C003C6B1F /* AppDelegate.swift */; };
 		365330B92007EC7C003C6B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365330B82007EC7C003C6B1F /* ViewController.swift */; };
 		365330BC2007EC7C003C6B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365330BA2007EC7C003C6B1F /* Main.storyboard */; };
@@ -19,11 +21,11 @@
 		365330D42007F88F003C6B1F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365330D22007F88F003C6B1F /* MapViewController.swift */; };
 		365330D52007F88F003C6B1F /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365330D32007F88F003C6B1F /* MapViewController.xib */; };
 		365330D82007F9B1003C6B1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365330D72007F9B1003C6B1F /* MapKit.framework */; };
-		36C160E8200CDE430095E618 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C160E7200CDE430095E618 /* DataController.swift */; };
-		36C160EA200CDE730095E618 /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C160E9200CDE730095E618 /* NetworkInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360C3971200D381D002FC206 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		360C3973200D381D002FC206 /* NetworkInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
 		365330B32007EC7C003C6B1F /* MapSpy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapSpy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365330B62007EC7C003C6B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365330B82007EC7C003C6B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,8 +39,6 @@
 		365330D22007F88F003C6B1F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		365330D32007F88F003C6B1F /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		365330D72007F9B1003C6B1F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		36C160E7200CDE430095E618 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		36C160E9200CDE730095E618 /* NetworkInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
 		408E7D9ED3F45A9998A76AE5 /* Pods_MapSpy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapSpy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D825E7DCF49698B7EB6DE0E9 /* Pods-MapSpy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapSpy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapSpy/Pods-MapSpy.debug.xcconfig"; sourceTree = "<group>"; };
 		D8478484EF22A1D041849A6D /* Pods-MapSpy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapSpy.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapSpy/Pods-MapSpy.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360C3970200D381D002FC206 /* business logic */ = {
+			isa = PBXGroup;
+			children = (
+				360C3971200D381D002FC206 /* DataController.swift */,
+			);
+			path = "business logic";
+			sourceTree = "<group>";
+		};
+		360C3972200D381D002FC206 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				360C3973200D381D002FC206 /* NetworkInterface.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
 		365330AA2007EC7B003C6B1F = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +94,8 @@
 		365330B52007EC7C003C6B1F /* MapSpy */ = {
 			isa = PBXGroup;
 			children = (
-				36C160E6200CDD580095E618 /* business logic */,
-				36C160E5200CDD470095E618 /* network */,
+				360C3970200D381D002FC206 /* business logic */,
+				360C3972200D381D002FC206 /* network */,
 				365330CD2007EF35003C6B1F /* View */,
 				365330B62007EC7C003C6B1F /* AppDelegate.swift */,
 				365330B82007EC7C003C6B1F /* ViewController.swift */,
@@ -110,24 +126,6 @@
 				408E7D9ED3F45A9998A76AE5 /* Pods_MapSpy.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		36C160E5200CDD470095E618 /* network */ = {
-			isa = PBXGroup;
-			children = (
-				36C160E9200CDE730095E618 /* NetworkInterface.swift */,
-			);
-			name = network;
-			path = ../../network;
-			sourceTree = "<group>";
-		};
-		36C160E6200CDD580095E618 /* business logic */ = {
-			isa = PBXGroup;
-			children = (
-				36C160E7200CDE430095E618 /* DataController.swift */,
-			);
-			name = "business logic";
-			path = "../../business logic";
 			sourceTree = "<group>";
 		};
 		9D59417ED624BFA303EBDFC3 /* Pods */ = {
@@ -274,9 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				365330D02007EF9E003C6B1F /* LoginViewController.swift in Sources */,
-				36C160E8200CDE430095E618 /* DataController.swift in Sources */,
+				360C3974200D381D002FC206 /* DataController.swift in Sources */,
 				365330BF2007EC7C003C6B1F /* MapSpy.xcdatamodeld in Sources */,
-				36C160EA200CDE730095E618 /* NetworkInterface.swift in Sources */,
+				360C3975200D381D002FC206 /* NetworkInterface.swift in Sources */,
 				365330B92007EC7C003C6B1F /* ViewController.swift in Sources */,
 				365330D42007F88F003C6B1F /* MapViewController.swift in Sources */,
 				365330B72007EC7C003C6B1F /* AppDelegate.swift in Sources */,
